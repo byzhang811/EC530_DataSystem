@@ -1,0 +1,6 @@
+product,category,quantity,revenue,sale_date
+Keyboard,Accessories,5,250.0,2026-03-01
+Mouse,Accessories,10,180.0,2026-03-01
+Monitor,Display,3,900.0,2026-03-02
+Laptop,Computers,2,2400.0,2026-03-02
+Webcam,Accessories,4,320.0,2026-03-03
