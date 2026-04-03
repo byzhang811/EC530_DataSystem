@@ -51,7 +51,7 @@ class SQLValidator:
 
         statement = statements[0].strip()
         first_token = self._first_token(statement)
-        if first_token not in {"select", "with"}:
+        if first_token != "select":
             return ValidationResult(
                 False,
                 ("Only SELECT queries are allowed.",),
