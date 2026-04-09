@@ -74,11 +74,18 @@ class OpenAIAdapter:
     def build_prompt(user_request: str, schema: dict[str, TableSchema]) -> str:
         schema_text = SchemaManager.format_schema_for_prompt(schema)
         return (
+            "You are an AI assistant that converts user requests into SQLite SQL.\n\n"
             "Database schema:\n"
             f"{schema_text}\n\n"
             "User request:\n"
             f"{user_request}\n\n"
-            "Return one SQLite SELECT query only."
+            "Your task is to:\n"
+            "1. Generate one SQL query that answers the user request.\n"
+            "2. Ensure the SQL is valid SQLite syntax.\n"
+            "3. Return only read-only SQL (SELECT).\n\n"
+            "Output format:\n"
+            "- SQL Query\n"
+            "- Explanation"
         )
 
     @staticmethod
