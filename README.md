@@ -6,6 +6,7 @@ A modular Python + SQLite data system that ingests CSV files, translates natural
 
 - Name: Boyang Zhang
 - Email: theostnc@bu.edu
+- Video: https://drive.google.com/drive/folders/1uAf2cjPlJ-EatFB4DTf0W1JSEH74kQ02?usp=drive_link
 
 This implementation follows the `DataSheetAI.pdf` assignment constraints:
 - Python + SQLite
